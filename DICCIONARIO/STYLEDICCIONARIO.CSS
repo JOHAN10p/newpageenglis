@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+body{
+  background:url(../imagenes/fondocarrusel.jpg);
+  padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: auto;
+}
+
+html{
+ 
+  font-size: 16px;
+  
+}
+
+/*font nav*/
+
+.font{
+
+font-family: comic sans MS,arial,verdana;
+
+}
+
+
+/*titulo del diccionario*/
+
+.tittled{
+
+text-align: center;
+font-size: 20px;
+font-weight: bold;
+font-family: lucida;
+margin-top: 40px;
+width: 100%;
+height: 100%;
+background: rgba(14, 14, 255, 0.822);
+border-radius: 40px;
+padding:10px;
+}
+
+/*titulo del diccionario*/
+
+
+/*divdiccionario buscador*/
+
+
+.navsearch{
+padding: 20px;  
+float: left;
+
+
+
+}
+
+/*divdiccionario buscador*/
+
+/*recursos*/
+
+.icons{
+
+
+    font-size: 20px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    border-radius:50%;
+    border:2px solid aquamarine;
+    margin:0 8px;
+    color: white;
+}
+
+
+.icons:hover{
+
+  background-color: rgb(252, 36, 108);
+  box-shadow: 0 0 20px 0 rgb(252, 36, 108) ;
+  transform: translateY(-7px); 
+
+
+}
+
+.colortxt{
+
+color:aquamarine;
+font-family: comic sans MS;
+
+}
+
+
+
+/*recursos*/
+
+
+
+/*tittle h3*/
+
+.h3txtingresar{
+  
+  font-size: 15px;
+  font-weight: bold;
+  font-family:comic sans ms;
+  
+  }
+  
+.resultadon{
+width: 50%;
+
+}
+
+
+
+
+/*tittle 3*/
+
+
+
+/*PROPIEDADES DE EL INPUT SEARCH*/
+
+.inputsearch{
+
+width: 40%;
+height: 38px;
+border-radius: 20px;
+box-shadow: 0 0 20px  rgba(0, 140, 255, 0.644);
+border: solid none;
+text-decoration: none;
+background: none ;
+font-family: comic sans ms;
+padding: 10px;
+border:2px solid rgb(0, 238, 255);
+box-shadow: 0 0 20px 0 rgba(0, 238, 255, 0.466);
+color: white;
+outline-width: 0 ;
+}
+
+.inputsearch:hover{
+
+border: 2px solid rgb(51, 255, 0);
+box-shadow:none 0 0 20px 0 rgba(51, 255, 0, 0.473);
+transition: 2s;
+
+}
+
+.inputsearch:focus{
+border: 2px solid rgb(51, 255, 0);
+box-shadow: none 0 0 20px 0 rgb(51, 255, 0);
+transition: 3s;
+}
+
+input::placeholder{
+
+font-family: comic sans ms;
+padding: 10px;
+color: white;
+
+}
+
+.bo{
+
+border-radius: 40px;
+padding: 10px;
+margin: 10px;
+border: 1px solid rgba(220, 20, 60, 0.342);
+background-color: rgba(220, 20, 60, 0.342);
+
+}
+
+.bo:hover{
+transform: translateY(-2px);
+transition: 0.5s;
+background-color: rgba(51, 255, 0, 0.37);
+outline: 0;
+border: 1px solid rgba(51, 255, 0, 0.356);
+
+
+}
+
+
+.fa-exclamation-circle{
+margin: auto;
+padding: 5px;
+color:rgba(255, 0, 0, 0.473);
+
+}
+
+.li-d{
+
+list-style: none;
+
+}
+/*PROPIEDADES DE EL INPUT SEARCH*/
+
+
+
+
+/*lee*/
+.lee{
+
+color: aquamarine;
+
+}
+
+
+/*lee*/
+
+
+h1{
+
+text-align: center;
+
+}
+
+  .content{
+    background: white;  
+    max-width: 1200px;
+    border: 2px solid rgba(0, 0, 255, 0.438);
+    box-shadow: 0 0 20px 0 blue;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: auto;
+    
+}
+
+
+#contenido{
+  width: 100%;
+  overflow:hidden;
+  background:url(../imagenes/fondocarrusel.jpg);
+  margin: 0 auto;
+  margin-left: auto;
+    margin-right: auto;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 10px;
+ 
+ }
+
+
+     #img1{
+
+      border-radius: 1%;
+      width:450px;
+      height:400px;
+      box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.801) ;
+      }
+
+a {
+
+text-decoration: none;
+
+}
+
+a:hover {
+
+  text-decoration: none;
+  
+  }
+
+
+  .tittle{
+
+color: white;
+font-size: 20px;
+
+  }    
+
+   .titulo{
+
+font-size: 2rem;
+
+   }
+
+
+.txt-responsive{
+
+font-size: 1rem;
+
+}
+
+
+   :root {
+    --color1: rgba(14, 14, 255, 0.822);    
+}
+
+.bg-dark { background-color: var(--color1) !important; }
+
+.navbar {
+    min-height: 5rem;
+}
+
+/* card */
+
+
+
+/* card */
+
+
+
+.footer-basic {
+    padding:40px 0;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    box-shadow: 0 0 20px 0 rgba(14, 14, 255, 0.822);
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:white;
+    margin-bottom:0;
+  }
+
+  .footer-basic .social .instagram{
+
+    border: 2px solid rgb(252, 36, 108);
+
+     }
+
+     .footer-basic .social .twitter{
+
+      border: 2px solid rgb(36, 238, 252);
+         
+    }
+
+
+
+    .footer-basic .social .facebook{
+
+      border: 2px solid rgb(39, 53, 250);
+         
+    }
+
+    
+    
+    .footer-basic .social .github{
+
+      border: 2px solid rgb(36, 252, 223);
+         
+    }
+
+
+    .footer-basic .social .linkedin{
+
+      border: 2px solid rgb(36, 227, 252);
+         
+    }
+
+
+    .footer-basic .social .pinterest{
+
+      border: 2px solid rgb(252, 36, 72);
+         
+    }
+  
+  
+  
+ .footer-basic .social .instagram:hover{
+
+background-color: rgb(252, 36, 108);
+box-shadow: 0 0 20px 0 rgb(252, 36, 108) ;
+transform: translateY(-7px); 
+ }
+
+
+ .footer-basic .social .twitter:hover{
+
+    background-color: rgb(36, 238, 252);
+    box-shadow: 0 0 20px 0 rgb(36, 238, 252);
+    transform: translateY(-7px);    
+  }
+
+     .footer-basic .social .facebook:hover{
+
+        background-color: rgb(39, 53, 250);
+        box-shadow: 0 0 20px 0 rgb(39, 53, 250);
+        transform: translateY(-7px);     
+      }
+
+         .footer-basic .social .github:hover{
+
+            background-color: rgb(36, 252, 223);
+            box-shadow: 0 0 20px 0 rgb(36, 252, 223);
+            transform: translateY(-7px);     
+          }
+
+             .footer-basic .social .linkedin:hover{
+
+                background-color: rgb(36, 227, 252);
+                box-shadow: 0 0 20px 0 rgb(36, 227, 252);
+                transform: translateY(-7px); 
+                  }
+
+                 .footer-basic .social .pinterest:hover{
+
+                    background-color: rgb(252, 36, 72);
+                    box-shadow: 0 0 20px 0 rgb(252, 36, 72);
+                    transform: translateY(-7px);  
+                     }
+
+
+
+
+                     @media screen and (max-width: 240px) {
+     
+              
+                   .paviso{
+                   
+
+                      width: 40%;
+                      
+                      
+                       }
+                       .inputsearch{
+
+                        width: 100%;
+                        height: 38px;
+                        border-radius: 20px;
+                        box-shadow: 0 0 20px  rgba(0, 140, 255, 0.644);
+                        border: solid none;
+                        text-decoration: none;
+                        background: none ;
+                        font-family: comic sans ms;
+                        padding: 10px;
+                        border:2px solid rgb(0, 238, 255);
+                        box-shadow: 0 0 20px 0 rgba(0, 238, 255, 0.466);
+                        color: white;
+                        outline-width: 0 ;
+                        }
+                        
+
+                   }

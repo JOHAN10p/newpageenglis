@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>LE-EN ➢ LOGIN </title>
+    
+    <link rel="stylesheet" href="STYLELOGIN.css">
+    <link rel="stylesheet" href="../BOOSTRAP/css/bootstrap.min.css">
+
+    <link rel="shortcut icon" href="../imagenes/reino-unido.png" >
+ 
+</head>
+<body>
+ 
+    <div class="container-login">
+        <div class="wrap-login">
+            <form class="login-form validate-form" id="formLogin" action="../controlador/login.php" method="post">
+                <span class="login-form-title">LOGIN</span>
+                
+                <div class="wrap-input100">
+                    <input class="input100" type="text" id="usuario" name="usuario" placeholder="Usuario" required>
+                    <span class="focus-efecto"></span>
+                </div>
+                
+                <div class="wrap-input100" >
+                    <input class="input100" type="password" id="clave" name="password" minlength="8"  placeholder="Contraseña" required>
+                    <span class="focus-efecto"></span>
+                </div>
+                
+                <div class="container-login-form-btn">
+                    <div class="wrap-login-form-btn">
+                        <div class="login-form-bgbtn"></div>
+                        <button type="submit" name="submit" class="login-form-btn" id="ingresar">INGRESAR</button>
+                    </div>
+                </div>
+
+                <p class="centrar"><b><i><a href="../REGISTRO/REGISTRO_ESTUDIANTES.html" style="color: rgb(35, 183, 241);"> ¡Registrate! </a></i></b></p>
+                <p class="centrar" ><b><i> <a href="../WELCOME.HTML" style="color: rgb(190, 25, 190);"> ¡return welcome! </a></i></b></p>
+
+                
+            </form>
+        </div>
+    </div>     
+        
+        
+     <script src="../jquery/jquery-3.3.1.min.js"></script>    
+     <script src="../BOOSTRAP/js/bootstrap.min.js"></script>    
+     <script src="../popper/popper.min.js"></script>     
+     <script src="validarlogin.js"></script>      
+
+   
+</body>
+</html>

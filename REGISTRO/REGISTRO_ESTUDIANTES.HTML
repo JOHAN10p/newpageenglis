@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="STYLEREGISTRO_ESTUDIANTES.css">
+    <!--awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--------------------------------------------------------------------------------------------------------------------------------------------->
+       <!--ICONO-->
+       <link rel="shortcut icon" href="../imagenes/reino-unido.png" >
+       <!------------------------------------------------------------------------------------------------------------------------------------> 
+      
+       
+    <title> LE-EN ➢ REGISTRO </title>
+   
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <div class="header">
+
+            <h2>CREAR CUENTA</h2>
+
+        </div>
+
+        <form id="form" class="form" action="../controlador/crearuser.php" method="post" >
+
+
+            <div class="form-control">
+
+                <label for="nombre">NOMBRE</label>
+                <input type="text"  placeholder="Ingrese su nombre" id="nombre" name="nombre" required  />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <b> <small>Error message</small> </b>
+
+            </div>
+
+
+            <div class="form-control">
+
+                <label for="apellido">APELLIDO</label>
+                <input type="text" placeholder="Ingrese su apellido" id="apellido" name="apellidos"  required/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <b> <small>Error message</small> </b>
+
+            </div>
+
+
+
+
+            <div class="form-control">
+
+                <label for="usuario">USUARIO</label>
+                <input type="text" placeholder="Ingrese su usuario" id="usuario" name="usuario" required />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <b> <small>Error message</small> </b>
+
+            </div>
+
+
+            <div class="form-control">
+
+                <label for="correo">CORREO</label>
+                <input type="email" placeholder="Ingrese su correo" id="correo" name="correo" required/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <b> <small>Error message</small> </b>
+
+            </div>
+
+
+
+            <div class="form-control campo">
+
+                <label for="password">CONTRASEÑA</label>
+                <input type="password" placeholder="Ingrese su contraseña" id="password" minlength="8" name="contraseña" required />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <b> <small>Error message</small> </b>
+                <span style="color: white;"> 👁️ </span>
+
+            </div>
+
+         
+            <div class="container-login-form-btn">
+                <div class="wrap-login-form-btn">
+                    <div class="login-form-bgbtn"></div>
+                    <button type="submit" name="enviar" value="enviar" class="login-form-btn">REGISTRAR</button>
+                </div>
+            </div>
+        <br>
+           <p class="centrar"><b><i><a href="../LOGIN/LOGIN.HTML" style="color: rgb(35, 183, 241);"> ¿Ya tienes una cuenta? </i> </b></p></a>
+           <p class="centrar" ><b><i><a href="../WELCOME.HTML" style="color: rgb(190, 25, 190);"> return welcome </i> </b></p></a>
+
+
+        </form>
+    </div>
+
+
+
+</body>
+</html>
