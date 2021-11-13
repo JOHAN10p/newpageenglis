@@ -19,7 +19,6 @@ if(isset($_FILES['img'])    && !empty($_FILES['img'])
 $mysql = new MySQL();
 
 $mysql->conectar();
-
 $img = addslashes(file_get_contents($_FILES['img']['tmp_name']));
 $nombre = $_POST['nombre'];
 $apellidos = $_POST['apellidos'];
@@ -51,5 +50,5 @@ $mysql->desconectar();
         }
         //en caso de que no llene todos los campos muestra el mensaje que ocurrió un error
         else{
-            echo "ecurrio un error";
+            header('location: ../gestion_alumnos/eliminar_alumno.php' );
         }

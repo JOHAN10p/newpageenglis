@@ -609,13 +609,15 @@ $row = mysqli_fetch_assoc($consulta);
     <h1>ACTUALIZA UN ALUMNO</h1>
 
 
-<form class="form" action="../controladordashboard/actualizaralumno.php" method="POST">
+<form class="form" action="../controladordashboard/actualizaralumno.php" method="POST" enctype="multipart/form-data">
     
 <input type='hidden' value= "<?php echo $variable ?>" name='id'>
 
+
 <p> IMG PERFIL : <br>
-  <img class="img-circle img-sm inputo" src="data:image/jpg;base64,<?php echo base64_encode($row['img']);?>"/>
-    <input  type="file"  name="img"  requiered="">
+
+<img class="img-circle img-sm inputo" src="data:image/jpg;base64,<?php echo base64_encode($row['img']);?>"/>  
+  <input  type="file" required  name="img"  >
     </p>
 
   <p> NOMBRE : <br> 

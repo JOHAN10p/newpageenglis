@@ -35,13 +35,12 @@ $contraseña = MD5($_POST['contraseña']);
 $id = $_POST['id'];
 
 // se realiza la actualización con los parametros enviados desde el formulario editaruser.php
-$mysql ->efectuarConsulta("UPDATE englispage.miembros SET  englispage.miembros.nombre ='".$nombre."',  
-                                           englispage.miembros.img = '".$img."',      
-                                           englispage.miembros.apellido = '".$apellido."', 
-                                           englispage.miembros.usuario = '".$usuario."', 
-                                           englispage.miembros.correo= '".$correo."',
-                                           englispage.miembros.contraseña='".$contraseña."'    
-                                           WHERE englispage.miembros.id = ".$id."");
+$mysql ->efectuarConsulta("UPDATE englispage.miembros SET  englispage.miembros.nombre = '".$nombre."', 
+englispage.miembros.img = '".$img."', 
+englispage.miembros.apellido = '".$apellido."', 
+englispage.miembros.usuario = '".$usuario."', 
+englispage.miembros.correo= '".$correo."', 
+englispage.miembros.contraseña= '".$contraseña."'  WHERE englispage.miembros.id = ".$id."");
 
 
 
@@ -50,7 +49,7 @@ $mysql ->efectuarConsulta("UPDATE englispage.miembros SET  englispage.miembros.n
 <head>
     
     
-    <META HTTP-EQUIV="REFRESH" CONTENT="0.5;URL=../gestion_alumnos/eliminar_alumno.php">
+    <META HTTP-EQUIV="REFRESH" CONTENT="0.58;URL=../gestion_alumnos/eliminar_alumno.php">
    
     <center>
       ¡Alumno actualizado Correctamente!
