@@ -616,7 +616,7 @@ $row = mysqli_fetch_assoc($consulta);
 <p> IMG PERFIL : <br>
 
 <img class="img-circle img-sm inputo" src="data:image/jpg;base64,<?php echo base64_encode($row['img']);?>"/>  
-  <input  type="file" required  name="img"  >
+  <input  type="file"   name="img"  >
     </p>
 
   <p> NOMBRE : <br> 

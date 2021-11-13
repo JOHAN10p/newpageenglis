@@ -564,7 +564,7 @@ if ( $sesioon_usuario == null ) {
     </p>
     
     <p> IMG PERFIL : <br>
-    <input type="file"  name="img" requiered>
+    <input type="file"  name="img" >
     </p>
     
     <p> USUARIO : <br>

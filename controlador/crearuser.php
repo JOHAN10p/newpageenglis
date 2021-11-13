@@ -25,11 +25,12 @@ $usuario = $_POST['usuario'];
 $correo = $_POST['correo'];
 $contraseña = MD5($_POST['contraseña']);
 $rol = 2;
+$img = 'none';
 
 
 
 
-$mysql->efectuarConsulta("INSERT INTO englispage.miembros VALUES('','" . $nombre . "', '" . $apellidos . "', '" . $usuario. 
+$mysql->efectuarConsulta("INSERT INTO englispage.miembros VALUES('', '" . $img . "'  ,'" . $nombre . "', '" . $apellidos . "', '" . $usuario. 
 "', '" . $correo. "', '" . $contraseña . "','" . $rol . "')");
 
 
@@ -39,7 +40,7 @@ $mysql->desconectar();
 		
 ?>
     <!-- se utiliza la etiqueta meta para mandar automaticamente a la pagina usuarios.php que se encuentra en la raíz del proyecto -->
-    <META HTTP-EQUIV="REFRESH" CONTENT="3;URL=../LOGIN/LOGIN.HTML">
+    <META HTTP-EQUIV="REFRESH" CONTENT="0.5;URL=../LOGIN/LOGIN.HTML">
    <!-- se muestra un mensaje al usuario para garantizar que hizo la actualización -->
     <center>
        Usuario registrado Correctamente! Serás redirigido automáticamente.
