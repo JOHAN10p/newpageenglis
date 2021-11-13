@@ -549,18 +549,22 @@ if ( $sesioon_usuario == null ) {
 
 
 
-<div class="divform">             
+<div class="divform">            
               
       <h1>AGREGA UN DOCENTE</h1>
 
 
-  <form class="form" action="../controladordashboard/creardocente.php" method="POST"> 
+  <form class="form" action="../controladordashboard/creardocente.php" method="POST" enctype="multipart/form-data" > 
     <p> NOMBRE : <br> 
     <input class="inputo" type="text" name="nombre" required >
     </p>
     
     <p> APELLIDO : <br>
     <input class="inputo" type="text" name="apellidos" required >
+    </p>
+    
+    <p> IMG PERFIL : <br>
+    <input type="file"  name="img" requiered>
     </p>
     
     <p> USUARIO : <br>

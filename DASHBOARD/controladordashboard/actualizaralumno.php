@@ -49,7 +49,7 @@ englispage.miembros.contraseña= '".$contraseña."'  WHERE englispage.miembros.i
 <head>
     
     
-    <META HTTP-EQUIV="REFRESH" CONTENT="0.58;URL=../gestion_alumnos/eliminar_alumno.php">
+    <META HTTP-EQUIV="REFRESH" CONTENT="0.5;URL=../gestion_alumnos/eliminar_alumno.php">
    
     <center>
       ¡Alumno actualizado Correctamente!

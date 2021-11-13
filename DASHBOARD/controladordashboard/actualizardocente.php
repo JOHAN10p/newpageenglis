@@ -1,6 +1,8 @@
 <?php
 // se validan las variables del formulario editaruser.php
-if(isset($_POST['nombre']) && !empty($_POST['nombre']) &&   
+if(isset($_FILES['img'])    && !empty($_FILES['img'])
+                            &&
+   isset($_POST['nombre']) && !empty($_POST['nombre']) &&   
    isset($_POST['apellido']) && !empty($_POST['apellido']) &&
    isset($_POST['usuario']) && !empty($_POST['usuario']) &&
    isset($_POST['correo']) && !empty($_POST['correo']) &&  
@@ -15,6 +17,7 @@ $mysql = new MySQL();
 $mysql->conectar();
 
 //se capturan las variables
+$img = addslashes(file_get_contents($_FILES['img']['tmp_name']));
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
 $usuario = $_POST['usuario'];
@@ -23,7 +26,8 @@ $contraseña = MD5($_POST['contraseña']);
 $id = $_POST['id'];
 
 // se realiza la actualización con los parametros enviados desde el formulario editaruser.php
-$mysql ->efectuarConsulta("UPDATE englispage.miembros SET  englispage.miembros.nombre ='".$nombre."',  
+$mysql ->efectuarConsulta("UPDATE englispage.miembros SET  englispage.miembros.nombre ='".$nombre."',
+                                           englispage.miembros.img = '".$img."',  
                                            englispage.miembros.apellido = '".$apellido."', 
                                            englispage.miembros.usuario = '".$usuario."', 
                                            englispage.miembros.correo= '".$correo."',

@@ -573,7 +573,7 @@ $mysql->conectar();
 //La consulta trae todos los campos de la tabla usuarios que sean igual al id recibido
 //Es decir de acuerdo al id recibido me muestra los datos de una persona en particular (cada persona o usuario tiene un id único)
 $consulta  = $mysql->efectuarConsulta("SELECT
-
+                            englispage.miembros.img,
                             englispage.miembros.nombre,
                             englispage.miembros.apellido,
                             englispage.miembros.usuario,
@@ -609,9 +609,15 @@ $row = mysqli_fetch_assoc($consulta);
     <h1>ACTUALIZA DOCENTE</h1>
 
 
-<form class="form" action="../controladordashboard/actualizardocente.php" method="POST">
+<form class="form" action="../controladordashboard/actualizardocente.php" method="POST" enctype="multipart/form-data">
     
 <input type='hidden' value= "<?php echo $variable ?>" name='id'>
+
+<p> IMG PERFIL : <br>
+
+<img class="img-circle img-sm inputo" src="data:image/jpg;base64,<?php echo base64_encode($row['img']);?>"/>  
+  <input  type="file" required  name="img"  >
+    </p>
 
   <p> NOMBRE : <br> 
   <input class="inputo" type="text" name="nombre"  value = "<?php echo $row['nombre'] ?>" requiered >

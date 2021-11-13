@@ -1,6 +1,8 @@
 <?php
 //se validan los datos del formulario crearuser.php
-if(isset($_POST['nombre'])    && !empty($_POST['nombre'])
+if(isset($_FILES['img'])    && !empty($_FILES['img'])
+                            &&  
+    isset($_POST['nombre'])    && !empty($_POST['nombre'])
                               &&   
    isset($_POST['apellidos']) && !empty($_POST['apellidos']) 
                               &&
@@ -18,7 +20,7 @@ $mysql = new MySQL();
 
 $mysql->conectar();
 
-
+$img = addslashes(file_get_contents($_FILES['img']['tmp_name']));
 $nombre = $_POST['nombre'];
 $apellidos = $_POST['apellidos'];
 $usuario = $_POST['usuario'];
@@ -29,7 +31,7 @@ $rol = 3;
 
 
 
-$mysql->efectuarConsulta("INSERT INTO englispage.miembros VALUES('','" . $nombre . "', '" . $apellidos . "', '" . $usuario. 
+$mysql->efectuarConsulta("INSERT INTO englispage.miembros VALUES('','" . $img . "','" . $nombre . "', '" . $apellidos . "', '" . $usuario. 
 "', '" . $correo. "', '" . $contraseña . "','" . $rol . "')");
 
 
