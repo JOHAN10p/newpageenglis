@@ -540,7 +540,7 @@ if ( $sesioon_usuario == null ) {
       <h1>AGREGA UN ALUMNO</h1>
 
 
-  <form class="form" action="../controladordashboard/crearalumno.php" method="POST" enctype="multipart/form-data"> 
+  <form class="form" action="../controladordashboard/crearalumno.php" method="POST" enctype="multipart/form-data">
     <p> NOMBRE : <br> 
     <input class="inputo" type="text" name="nombre" required >
     </p>

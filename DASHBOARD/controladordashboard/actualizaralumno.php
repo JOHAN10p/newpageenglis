@@ -1,20 +1,32 @@
 <?php
-// se validan las variables del formulario editaruser.php
-if(isset($_POST['nombre']) && !empty($_POST['nombre']) &&   
-   isset($_POST['apellido']) && !empty($_POST['apellido']) &&
-   isset($_POST['usuario']) && !empty($_POST['usuario']) &&
-   isset($_POST['correo']) && !empty($_POST['correo']) &&  
-   isset($_POST['contraseña']) && !empty($_POST['contraseña'])     
-        
+//se validan los datos del formulario crearuser.php
+if(isset($_FILES['img'])    && !empty($_FILES['img'])
+                             &&     
+   isset($_POST['nombre']) && !empty($_POST['nombre']) 
+                              &&
+   isset($_POST['apellido']) && !empty($_POST['apellido']) 
+                              &&
+   isset($_POST['usuario'])     && !empty($_POST['usuario'])
+                              &&
+   isset($_POST['correo'])      && !empty($_POST['correo']) 
+                                     &&
+   isset($_POST['contraseña']) && !empty($_POST['contraseña'])   
+                                   
+   
         ){
-    //se llama la clase
-require_once '../../modelo/mysql.php';
-//se instancia la clase
+
+
+
+	require_once '../../modelo/mysql.php';
+
+
+
+
 $mysql = new MySQL();
-// se conecta con el método
+
 $mysql->conectar();
 
-//se capturan las variables
+$img = addslashes(file_get_contents($_FILES['img']['tmp_name']));
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
 $usuario = $_POST['usuario'];
@@ -24,6 +36,7 @@ $id = $_POST['id'];
 
 // se realiza la actualización con los parametros enviados desde el formulario editaruser.php
 $mysql ->efectuarConsulta("UPDATE englispage.miembros SET  englispage.miembros.nombre ='".$nombre."',  
+                                           englispage.miembros.img = '".$img."',      
                                            englispage.miembros.apellido = '".$apellido."', 
                                            englispage.miembros.usuario = '".$usuario."', 
                                            englispage.miembros.correo= '".$correo."',
@@ -31,20 +44,21 @@ $mysql ->efectuarConsulta("UPDATE englispage.miembros SET  englispage.miembros.n
                                            WHERE englispage.miembros.id = ".$id."");
 
 
+
    ?>
 
 <head>
     
-    <!-- se utiliza la etiqueta meta para mandar automaticamente a la pagina usuarios.php que se encuentra en la raíz del proyecto -->
+    
     <META HTTP-EQUIV="REFRESH" CONTENT="0.5;URL=../gestion_alumnos/eliminar_alumno.php">
-   <!-- se muestra un mensaje al usuario para garantizar que hizo la actualización -->
+   
     <center>
       ¡Alumno actualizado Correctamente!
     </center>
 </head>
 <?php
         }
-        //en caso de que no llene todos los campos muestra el mensaje que ocurrió un error
+        
         else{
-            echo "ecurrio un error";
+           header('location: ../gestion_alumnos/eliminar_alumno.php' );
         }
