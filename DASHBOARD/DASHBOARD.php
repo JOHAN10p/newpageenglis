@@ -670,7 +670,7 @@ $mysql->conectar();
 // se ejecuta y guarda la consulta en la variable llamada consulta
 
 
-$consulta = $mysql->efectuarConsulta("SELECT englispage.miembros.id, englispage.miembros.nombre, 
+$consulta = $mysql->efectuarConsulta("SELECT englispage.miembros.id,englispage.miembros.img, englispage.miembros.nombre, 
 
 englispage.miembros.apellido, englispage.miembros.usuario, englispage.miembros.correo,
 
@@ -703,6 +703,7 @@ $mysql->desconectar();
                                   
 
 <div class="table-responsive">
+    
 					                    <table class="table table-vcenter mar-top">
 					                        <thead>
 					                            <tr>
@@ -723,8 +724,8 @@ $mysql->desconectar();
                                             <tbody>
 					                            <tr>
 					                                <td class="min-w-td"><?php echo $row['id']?></td>
-                                                    <td><a href="#"><img src="img\profile-photos\4.png" alt="Profile Picture" class="img-circle img-sm"></a></td>
-					                                <td><?php echo $row['nombre']?></td>
+                                                    <td> <img class="img-circle img-sm" src="data:image/jpg;base64,<?php echo base64_encode($row['img']);?>"/></td>
+                                                    <td><?php echo $row['nombre']?></td>
                                                     <td><?php echo $row['apellido']?></td>
                                                     <td><?php echo $row['usuario']?></td>                  
                                                     <td><?php echo $row['correo']?></td>
